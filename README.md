@@ -1,4 +1,4 @@
-# HADES - Security Framework From HELL v7.1
+# HADES - Security Framework From HELL v8.0
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-7-blue.svg" alt="Version">
