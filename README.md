@@ -73,8 +73,10 @@ HADES is an advanced bug bounty framework designed to automate reconnaissance, v
 ### PyPI Installation
 ```bash
 pip install hades-vulnscan
-```
 
+usage :
+hades -h
+```
 
 ### Prerequisites
 - Linux/Unix-based operating system
