@@ -15,6 +15,11 @@
 
 <img width="323" height="450" alt="image" src="https://github.com/user-attachments/assets/afe134a6-8a11-4f6f-8d7c-79407253e7de" />
 
+### Documentation
+```
+https://joelindra.gitbook.io/all-tools/hades
+```
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
