@@ -1,333 +1,192 @@
-# HADES - Security Framework From HELL v8.0
-
+## *The Ultimate AI-Powered Security Framework for the Modern Era* 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-7-blue.svg" alt="Version">
-  <img src="https://img.shields.io/badge/Platform-Linux-green.svg" alt="Platform">
-  <img src="https://img.shields.io/badge/Shell-Bash-orange.svg" alt="Shell">
-  <img src="https://img.shields.io/badge/License-MIT-red.svg" alt="License">
+<img width="500" height="500" alt="hades_hacker_logo_1774882845161-removebg-preview" src="https://github.com/user-attachments/assets/18a0f966-aae4-4fc5-81d8-fc5a934bee9e" />
 </p>
 
 <p align="center">
-  <strong>A comprehensive automated bug bounty framework for reconnaissance, vulnerability assessment, and security testing</strong>
+  <img src="https://img.shields.io/badge/LABEL-MESSAGE-COLOR?style=for-the-badge" alt="deskripsi">
+  <img src="https://img.shields.io/badge/CORE-AI--HYBRID-blue?style=for-the-badge" alt="Core">
+  <img src="https://img.shields.io/badge/SECURITY-SHADOW--PRO-black?style=for-the-badge" alt="Security">
+  <img src="https://img.shields.io/badge/AUTH-ANONRE-red?style=for-the-badge" alt="Author">
+</p>
+
+
+---
+
+<p align="center">
+  <b>The HADES vPro-1.0 Masterwork Edition</b> represents the pinnacle of modern security engineering. Developed by <b>Anonre</b>, it seamlessly weaves together <b>Autonomous Intelligence</b>, <b>Adaptive Machine Learning</b>, and <b>High-Performance Shell Orchestration</b> into a singular, devastatingly effective security ecosystem.
 </p>
 
 ---
 
-<img width="323" height="450" alt="image" src="https://github.com/user-attachments/assets/afe134a6-8a11-4f6f-8d7c-79407253e7de" />
+## 🏛️ SYSTEM ARCHITECTURE & DATA FLOW
 
-### Documentation
+Hades is engineered with a **Modular Layered Architecture**, ensuring complete isolation between the reasoning engine and the target environment.
+
+```mermaid
+graph TB
+    subgraph "1. INTERFACE LAYER"
+        CLI[⌨️ Master CLI]
+        WEB[🖥️ Cyber-Deck Dashboard]
+        DB[(🌁 SQLite Database)]
+    end
+
+    subgraph "2. INTELLIGENCE ENGINE"
+        ORC{ORCHESTRATOR}
+        AI[🛡️ Aegis AI Agent]
+        DL[🧠 Deep Learn Engine]
+        KB[🧬 Knowledge Modules]
+    end
+
+    subgraph "3. ISOLATED EXECUTION"
+        RUN[⚙️ Runtime Manager]
+        SDK[🐳 Docker Sandbox]
+        SHL[🔥 Inferno Modules]
+    end
+
+    subgraph "4. EXTERNAL ECOSYSTEM"
+        LLM["🤖 LLM Providers (Gemini / GPT / Claude)"]
+        SOC["🔔 Alert System (Telegram / Discord)"]
+        TGT[🎯 Target Environment]
+    end
+
+    %% Interactions
+    CLI --> ORC
+    WEB --> DB
+    ORC --> AI
+    ORC --> SHL
+    AI <--> DL
+    DL --- KB
+    AI --> RUN
+    AI -- API --> LLM
+    RUN --> SDK
+    SDK -- Probe --> TGT
+    SHL -- Force --> TGT
+    ORC -- Notify --> SOC
+    ORC <--> DB
 ```
-https://joelindra.gitbook.io/all-tools/hades
+
+### 🗺️ LAYER OVERVIEW & DATA FLOW
+
+The HADES framework operates through a **High-Sync Data Cycle**, ensuring that reasoning and execution are seamlessly linked:
+
+1. **Interface Layer**: Captures user intent via the **Master CLI** or **Cyber-Deck Dashboard** and maintains state in the **SQLite Database**.
+2. **Intelligence Engine**: The **Orchestrator** initializes the **Aegis AI Agent**, which leverages the **Deep Learn Engine** and **Knowledge Modules** to formulate a tactical attack plan.
+3. **Isolated Execution**: The **Runtime Manager** spawns a secured **Docker Sandbox** where the actual security tools and **Inferno Shell Modules** are executed against the target.
+4. **External Ecosystem**: Findings are enriched by **LLM Providers**, sent to the operator via the **Alert System** (Telegram/Discord), and finally committed to the target environment.
+
+**🔄 Data Flow Journey**: `User Input` ➔ `Reasoning (AI/DL)` ➔ `Sandboxed Execution` ➔ `Target Probe` ➔ `Result Analysis` ➔ `Real-time Alert/Dashboard`.
+
+### 🧬 THE MASTERWORK TECHNOLOGY STACK
+
+| INTEL & REASONING | INTERFACE & CORE | EXECUTION SUITE |
+| :--- | :--- | :--- |
+| • Gemini 2.5 Pro / Flash | • Python 3.12 Core | • Docker Engine (Isolated) |
+| • Claude 3.5 Sonnet | • FastAPI / Uvicorn API | • Kali Linux Toolset |
+| • GPT-4o / Llama 3.3 | • Vite + React Dashboard | • Playwright (Automation) |
+| • LiteLLM Orchestration | • SQLite Persistence | • Shell Injection Engine |
+
+---
+
+## 💎 THE CORE PILLARS
+
+### 🤖 AEGIS AI: AUTONOMOUS INTELLIGENCE
+
+The **Aegis AI Agent** is a multi-agent tree system that operates with absolute autonomy. It doesn't just scan; it **hunts**.
+
+- **Self-Driving Hacking**: Full lifecycle execution from Recon to Reporting.
+- **Micro-Specialization**: Agents spawn dynamically to handle specific vulnerability vectors.
+- **Elite Logic**: Tuned to prioritize high-impact findings (RCE, SQLi, SSRF, IDOR).
+
+### 🧬 DEEP LEARN: ADAPTIVE EVOLUTION
+
+The **Deep Learn Engine** provides the systemic intelligence required to bypass modern defensive perimeters.
+
+```mermaid
+graph LR
+    Env[ENVIRONMENT] -- FEEDBACK --> DLE[DEEP LEARN]
+    DLE -- ANALYSIS --> Opt[PAYLOAD OPTIMIZER]
+    Opt -- REFINED ATTACK --> Target[TARGET]
+    Target -- RESPONSE --> Env
 ```
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Modules](#modules)
-- [Requirements](#requirements)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [Disclaimer](#disclaimer)
-- [Author](#author)
+- **Learning Loops**: Every blocked request informs the next tactical move.
+- **Strategic Payloads**: Dynamically generated bypasses for WAF/IPS protection.
 
 ---
 
-## 🎯 Overview
+## 🎮 MASTERS COMMAND MATRIX
 
-HADES is an advanced bug bounty framework designed to automate reconnaissance, vulnerability scanning, and security testing processes. Built with efficiency and comprehensive coverage in mind, it integrates multiple industry-standard tools to provide a unified platform for security researchers and bug bounty hunters.
-
-### Key Highlights
-- **Automated Reconnaissance**: Mass and single target reconnaissance
-- **Vulnerability Assessment**: SQL injection, XSS, LFI testing
-- **OWASP Testing**: Client-side and cryptography testing
-- **Special Operations**: Subdomain takeover, CORS/CSRF testing
-- **Elegant Interface**: Color-coded output with progress indicators
-
----
-
-## ✨ Features
-
-### 🔍 Reconnaissance Capabilities
-- **Mass Target Recon**: Automated subdomain enumeration and probing
-- **Single Target Recon**: Focused reconnaissance on specific targets
-- **Port Scanning**: Comprehensive port discovery and service enumeration
-
-### 🛡️ Vulnerability Testing
-- **SQL Injection**: Automated SQLi detection and exploitation
-- **Cross-Site Scripting (XSS)**: DOM and reflected XSS testing
-- **Local File Inclusion (LFI)**: Path traversal and file disclosure testing
-
-### 🚀 Advanced Security Testing
-- **Subdomain Takeover**: Detection of vulnerable subdomains
-- **CORS Misconfiguration**: Cross-origin resource sharing testing
-- **CSRF Testing**: Cross-site request forgery vulnerability assessment
-- **Directory Brute-forcing**: Hidden directory and file discovery
-- **JavaScript Analysis**: Secret and sensitive data extraction from JS files
-
-### 🔐 OWASP Testing Framework
-- **Client-side Testing**: Browser-based vulnerability assessment
-- **Cryptography Testing**: SSL/TLS and encryption analysis
+| CATEGORY | COMMAND FLAGS | MISSION OBJECTIVE |
+| :--- | :--- | :--- |
+| **🤖 AI AGENT** | `-t, --target`<br>`--templates`<br>`-n, --non-interactive` | Launch the fully autonomous Aegis AI engine against high-value targets. |
+| **🔍 RECON** | `-d, --mass-recon`<br>`-s, --single-recon`<br>`-f, --port-scan` | Deep infrastructure mapping and external attack surface discovery. |
+| **💉 INJECTION** | `-o, --single-sql`<br>`-p, --mass-sql`<br>`-x, --single-xss`<br>`-j, --single-lfi` | Precision exploitation modules for SQLi, XSS, and Path Traversal. |
+| **🛡️ SPECIAL OPS** | `-m, --mass-assess`<br>`-y, --sub-takeover`<br>`-l, --js-finder` | Advanced vulnerability assessment and sensitive secret harvesting. |
+| **⚙️ SYSTEM** | `--setup-api`<br>`--setup-notifications`<br>`-i, --install` | Interactive wizards for system configuration and dependency management. |
 
 ---
 
-## 🔧 Installation
+## 🖥️ THE CYBER-DECK DASHBOARD
 
-### PyPI Installation
+Hades features a state-of-the-art **Web Interface** that provides a mission-control view.
+
+- **Live Stream**: Watch the AI's internal reasoning and tool outputs in real-time.
+- **Attack Visualizer**: Dynamic relationship mapping of your targets and findings.
+- **Reporting**: Professional Markdown/PDF export for one-click documentation.
+
+> [!TIP]
+> Launch with: `hades --web` | Access: `http://localhost:9656`
+
+---
+
+## 🛠️ QUICK START GUIDE
+
+### 1. Installation
+
 ```bash
-pip install hades-vulnscan
-
-usage :
-hades -h
+# DPKG Installation
+dpkg -i hades-v1.0.deb
 ```
 
-### Prerequisites
-- Linux/Unix-based operating system
-- Root privileges (required for certain operations)
-- Internet connection for tool installation
+### 2. Configuration
 
-### Quick Install
 ```bash
-# Clone the repository
-git clone https://github.com/joelindra/hades.git
+# Setup AI Keys (Gemini, Claude, GPT, etc.)
+hades --setup-api
 
-# Navigate to directory
-cd hades
-
-# Make executable
-chmod +x hades
-
-# Install dependencies
-sudo ./hades --install
+# Setup Notifications (Telegram/Discord)
+hades --setup-notifications
 ```
 
-### Manual Installation
-If you prefer to install dependencies manually, ensure you have the following tools:
-- `wafw00f`, `subfinder`, `assetfinder`, `httprobe`
-- `waybackurls`, `anew`, `ffuf`, `gf`
-- `nmap`, `nuclei`, `subjack`, `dirsearch`
-- `sqltimer`, `dalfox`, `trufflehog`
-- `sslscan`, `openssl`, `curl`, `jq`
+### 3. Launch First Mission
 
----
-
-## 🚀 Usage
-
-### Basic Syntax
 ```bash
-./hades [OPTIONS]
-```
-
-### Display Help
-```bash
-./hades --help
+# Tactical AI Audit
+hades --target https://example.com --instruction "Focus on authentication"
 ```
 
 ---
 
-## 📦 Modules
+## 🛡️ SECURITY & ISOLATION
 
-### 🔍 Reconnaissance
-| Command | Description | Tools Used |
-|---------|-------------|------------|
-| `-d, --mass-recon` | Mass Target Reconnaissance | wafw00f, subfinder, assetfinder, httprobe, waybackurls, anew, ffuf, gf, curl |
-| `-s, --single-recon` | Single Target Reconnaissance | wafw00f, waybackurls, anew, ffuf, gf, curl |
-| `-f, --port-scan` | Port Scanning | nmap, curl |
-
-### 🛡️ Injection Testing
-| Command | Description | Tools Used |
-|---------|-------------|------------|
-| `-p, --mass-sql` | Mass SQL Injection Testing | wafw00f, subfinder, assetfinder, httprobe, waybackurls, anew, ffuf, gf, sqltimer, curl |
-| `-o, --single-sql` | Single Target SQL Injection | wafw00f, waybackurls, anew, ffuf, gf, sqltimer, curl |
-| `-w, --mass-xss` | Mass XSS Testing | wafw00f, subfinder, assetfinder, httprobe, waybackurls, anew, ffuf, gf, dalfox, curl |
-| `-x, --single-xss` | Single Target XSS Testing | wafw00f, waybackurls, anew, ffuf, gf, dalfox, curl |
-| `-n, --single-lfi` | Local File Inclusion Testing | wafw00f, waybackurls, anew, ffuf, gf, mapfile, md5sum, curl |
-
-### 🎯 Special Operations
-| Command | Description | Tools Used |
-|---------|-------------|------------|
-| `-m, --mass-assess` | Mass Vulnerability Assessment | wafw00f, subfinder, assetfinder, httprobe, nuclei, curl |
-| `-y, --sub-takeover` | Subdomain Takeover Testing | wafw00f, notifier.sh, subfinder, assetfinder, httprobe, subjack, curl |
-| `-q, --dir-patrol` | Directory Brute-forcing | wafw00f, notifier.sh, subfinder, assetfinder, httprobe, dirsearch |
-| `-l, --js-finder` | JavaScript Secret Analysis | wafw00f, notifier.sh, subfinder, assetfinder, httprobe, waybackurls, anew, trufflehog, curl |
-| `-k, --mass-cors` | CORS Misconfiguration Testing | wafw00f, subfinder, assetfinder, httprobe, waybackurls, anew, ffuf, gf |
-| `-u, --mass-csrf` | CSRF Vulnerability Testing | wafw00f, subfinder, assetfinder, httprobe, waybackurls, anew, ffuf, gf, curl |
-
-### 🔐 OWASP Testing
-| Command | Description | Tools Used |
-|---------|-------------|------------|
-| `-e, --client-test` | Client-side Testing | curl, jq |
-| `-b, --weak-test` | Cryptography Testing | nmap, sslscan, openssl, curl, timeout |
-
-### ⚙️ System
-| Command | Description |
-|---------|-------------|
-| `-i, --install` | Install Dependencies |
-| `-h, --help` | Display Help Menu |
+- **Docker Sandbox**: All AI tool operations run in isolated `hades-sandbox` containers.
+- **Secure Persistence**: Encrypted session logs stored in local SQLite.
+- **Authored By**: **Anonre — The Shadow of Hades.**
 
 ---
+## 👁️ Preview
 
-## 📋 Requirements
-
-### System Requirements
-- **OS**: Kali Linux
-- **RAM**: Minimum 2GB, Recommended 4GB+
-- **Storage**: At least 5GB free space
-- **Network**: Stable internet connection
-
-### Tool Dependencies
-The framework automatically installs required tools, but manual installation may be needed for:
-- Go-based tools (subfinder, assetfinder, httprobe, anew, ffuf, nuclei)
-- Python-based tools (wafw00f, dirsearch, trufflehog)
-- System tools (nmap, curl, openssl, sslscan)
+<img width="700" height="800" alt="image" src="https://github.com/user-attachments/assets/cdbbd999-a991-442c-981e-27f6537956c4" />
+<img width="700" height="800" alt="image" src="https://github.com/user-attachments/assets/0a10791f-f642-465f-941a-101741b9f034" />
 
 ---
+## 📜 LEGAL DISCLAIMER
 
-## 💡 Examples
+> [!CAUTION]
+> **LEGAL NOTICE:** This tool is for authorized security testing only. Misuse of this software is strictly prohibited. The developer assumes no liability for unauthorized actions.
 
-### Basic Reconnaissance
-```bash
-# Single target reconnaissance
-./hades --single-recon
-
-# Mass target reconnaissance  
-./hades --mass-recon
-
-# Port scanning
-./hades --port-scan
-```
-
-### Vulnerability Testing
-```bash
-# SQL injection testing
-./hades --single-sql
-
-# XSS vulnerability testing
-./hades --mass-xss
-
-# LFI testing
-./hades --single-lfi
-```
-
-### Advanced Testing
-```bash
-# Subdomain takeover testing
-./hades --sub-takeover
-
-# CORS misconfiguration testing
-./hades --mass-cors
-
-# JavaScript secret analysis
-./hades --js-finder
-```
-
-### OWASP Testing
-```bash
-# Client-side testing
-./hades --client-test
-
-# Cryptography testing
-./hades --weak-test
-```
-
-### Multiple Operations
-```bash
-# Combine multiple modules
-./hades --mass-recon --mass-sql --sub-takeover
-```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from the security community! Here's how you can help:
-
-### Ways to Contribute
-- **Bug Reports**: Report issues and bugs
-- **Feature Requests**: Suggest new features or improvements
-- **Code Contributions**: Submit pull requests with enhancements
-- **Documentation**: Improve documentation and examples
-- **Tool Integration**: Add support for new security tools
-
-### Development Guidelines
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Code Standards
-- Follow bash scripting best practices
-- Maintain consistent code formatting
-- Add comments for complex functions
-- Test thoroughly before submission
-
----
-
-## ⚠️ Disclaimer
-
-### Legal Notice
-This tool is intended for **authorized security testing only**. Users are responsible for:
-
-- **Legal Compliance**: Ensure you have proper authorization before testing any target
-- **Ethical Usage**: Use only for legitimate security research and bug bounty programs
-- **Responsible Disclosure**: Follow responsible disclosure practices for any vulnerabilities found
-
-### Important Notes
-- **Authorization Required**: Never use this tool against systems you don't own or have explicit permission to test
-- **Educational Purpose**: This tool is for educational and authorized testing purposes only
-- **No Warranty**: The tool is provided "as-is" without any warranty
-- **User Responsibility**: Users are solely responsible for their actions and any consequences
-
-### Compliance
-By using HADES, you agree to:
-- Comply with all applicable laws and regulations
-- Respect target systems and avoid causing damage
-- Use the tool ethically and responsibly
-- Follow bug bounty program rules and guidelines
-
----
-
-## 👨‍💻 Author
-
-**Joel Indra (Anonre)**
-- GitHub: [@joelindra](https://github.com/joelindra)
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-Special thanks to the creators and maintainers of the integrated security tools that make HADES possible:
-- Tom Hudson (tomnomnom) - for various Go-based tools
-- OWASP Community - for security testing methodologies
-- Bug bounty community - for continuous feedback and improvements
-
----
-
-## 📞 Support
-
-### Getting Help
-- **Issues**: Report bugs and issues on [GitHub Issues](https://github.com/joelindra/hades/issues)
-- **Discussions**: Join discussions on [GitHub Discussions](https://github.com/joelindra/hades/discussions)
-- **Documentation**: Check the [Wiki](https://github.com/joelindra/hades/wiki) for detailed guides
-
-### Community
-- Follow the project for updates
-- Star the repository if you find it useful
-- Share with the security community
-
----
-
-![image](https://github.com/user-attachments/assets/bf2fdec0-8e1a-4f2b-86ce-68c938ef0b22)
-
----
 <p align="center">
-  <sub>⚡ Happy Hunting! ⚡</sub>
+  <b>HADES vPRO v1.0 — THE ULTIMATE DEFENSE IS A SUPERIOR OFFENSE</b><br>
+  <i>Forged in the shadows for those who guard the light.</i>
 </p>
