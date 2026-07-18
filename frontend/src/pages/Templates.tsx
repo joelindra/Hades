@@ -105,7 +105,42 @@ export default function Templates() {
 
   return (
     <div className="relative space-y-8 animate-in fade-in duration-700">
-      
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-primary-500/10">
+        <div>
+          <div className="flex items-center space-x-2 text-primary-500 mb-2">
+            <Scroll className="h-5 w-5" />
+            <span className="text-xs font-bold uppercase tracking-widest text-primary-400">Payload Registry</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">Mission <span className="text-primary-500">Templates</span></h1>
+          <p className="text-slate-400 mt-1 max-w-xl">Configure custom directives and specialized logic for your autonomous agents.</p>
+        </div>
+        <button
+          onClick={() => {
+            setCreating(true)
+            setFormData({ name: '', content: '' })
+          }}
+          className="group relative px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-xl transition-all shadow-lg shadow-primary-600/20 active:scale-95 flex items-center space-x-2 overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-red-400/0 via-white/10 to-red-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+          <Plus className="h-5 w-5" />
+          <span>New Template</span>
+        </button>
+      </div>
+
+      {/* Confirmation Modal (Purge) */}
+      {toDelete && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 overflow-y-auto">
+          <div className="fixed inset-0 bg-black/95 backdrop-blur-xl animate-in fade-in duration-500" onClick={() => setToDelete(null)} />
+          <div className="relative w-full max-w-md bg-slate-900/40 backdrop-blur-2xl border border-primary-500/40 rounded-[2.5rem] shadow-[0_0_50px_-12px_rgba(220,38,38,0.5)] overflow-hidden animate-in zoom-in-95 slide-in-from-bottom-10 duration-300">
+            <div className="p-10 text-center relative">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-primary-600/20 rounded-full blur-[80px] pointer-events-none" />
+
+              <div className="relative inline-block mb-8">
+                <div className="absolute inset-0 bg-primary-600 rounded-full blur-3xl opacity-30 animate-pulse" />
+                <div className="relative h-20 w-20 bg-gradient-to-br from-primary-600 to-red-900 border-2 border-primary-400/30 rounded-full flex items-center justify-center mx-auto shadow-[0_0_30px_rgba(220,38,38,0.4)] transition-transform hover:scale-110">
+                  <Trash2 className="h-10 w-10 text-white animate-pulse" />
+                </div>
+              </div>
 
               <div className="relative space-y-3 mb-10">
                 <h3 className="text-3xl font-bold text-white tracking-tighter uppercase italic">
@@ -120,10 +155,10 @@ export default function Templates() {
 
               <p className="text-slate-300 text-sm mb-10 leading-relaxed font-medium">
                 Terminate logic node <span className="text-white font-bold bg-primary-500/20 px-2 py-0.5 rounded border border-primary-500/30">"{toDelete}"</span>?
-                <br/>
+                <br />
                 <span className="text-primary-400/80 text-[11px] font-bold uppercase tracking-wider mt-2 block italic">Action is permanent & irreversible.</span>
               </p>
-              
+
               <div className="flex flex-col gap-3">
                 <button
                   onClick={() => deleteMutation.mutate(toDelete)}
