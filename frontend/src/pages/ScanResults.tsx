@@ -208,7 +208,18 @@ export default function ScanResults() {
 
   return (
     <div className="relative space-y-8 animate-in fade-in duration-700">
-      
+      {/* Success Toast */}
+      {showSuccessToast && (
+        <div className="fixed top-4 right-4 z-[100] animate-slide-in-right">
+          <div className="bg-slate-900 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center space-x-3 min-w-[320px] border border-green-500/50">
+            <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center">
+              <Shield className="w-5 h-5 text-green-500" />
+            </div>
+            <div className="flex-1">
+              <p className="font-bold text-sm">ARCHIVE PURGED</p>
+              <p className="text-xs text-slate-400">Scan result successfully deleted</p>
+            </div>
+          </div>
         </div>
       )}
 
