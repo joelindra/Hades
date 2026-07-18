@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # Standalone Frontend (React/Vite served by Nginx)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    environment:
+      - VITE_API_URL=/api
+    depends_on:
+      - backend
+    restart: always
+
+  # Backend API (FastAPI)
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9656:9656"
+    volumes:
+      - ./config:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock # Required if HADES AI Agent Mode uses host's Docker daemon
+    environment:
+      - HADES_ALLOWED_ORIGINS=http://localhost,http://localhost:80
+      - HADES_SECRET_KEY=dev_secret_key_change_in_production
+    restart: always

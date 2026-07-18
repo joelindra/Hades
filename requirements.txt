@@ -1,0 +1,55 @@
+# Core dependencies
+rich>=13.0.0
+pyyaml>=6.0
+
+# AI/LLM dependencies
+litellm>=1.79.1
+openai>=1.99.5,<1.100.0
+tenacity>=9.0.0
+transformers>=4.40.0
+torch>=2.2.0
+torchvision>=0.17.0
+accelerate>=0.29.0
+
+# Web framework
+# Pin starlette to be compatible with Kali's apt-managed version (avoids uninstall conflict)
+starlette>=0.40.0
+fastapi>=0.100.0
+uvicorn>=0.20.0
+
+# Data validation
+pydantic>=2.11.3
+
+# Development tools
+ipython>=9.3.0
+openhands-aci>=0.3.0
+
+# Browser automation
+playwright>=1.48.0
+
+# Docker
+docker>=7.1.0
+
+# GraphQL
+gql[requests]>=3.5.3
+
+# TUI
+textual>=4.0.0
+
+# Utilities
+xmltodict>=0.13.0
+pyte>=0.8.1
+requests>=2.32.0
+libtmux>=0.46.2
+jinja2>=3.1.0
+python-dotenv>=1.0.0
+openpyxl>=3.1.2
+weasyprint>=60.0
+markdown>=3.5.0
+
+# Authentication
+PyJWT>=2.8.0
+email-validator>=2.1.0
+Pillow>=10.0.0
+cairosvg>=2.7.0
+python-multipart

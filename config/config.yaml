@@ -1,0 +1,70 @@
+versioning:
+  current_version: Pro-1.0.0
+  last_updated: '2026-03-27'
+framework:
+  name: HADES
+  version: Pro-1.0.0
+  edition: Modern Edition (Restructured)
+  author: Anonre | Joel Indra
+  description: Elegant Security Testing Framework
+application:
+  name: HADES Security Scanner
+  user_agent: HADES-Security-Scanner/10.0
+  session_timeout: 3600
+  max_retries: 3
+  retry_delay: 2
+logging:
+  level: INFO
+  directory: ./logs
+  max_file_size: 10M
+  retention_days: 7
+  enable_console: true
+  enable_file: true
+output:
+  directory: ./output
+  retention_days: 30
+  auto_cleanup: true
+  compress_results: true
+  format: json
+scanning:
+  max_concurrent_scans: 5
+  rate_limit: 100
+  timeout: 30
+  connection_timeout: 10
+  follow_redirects: true
+  max_redirects: 5
+notifications:
+  telegram:
+    enabled: false
+    token: ''
+    chat_id: ''
+    send_summary: true
+    send_files: true
+    max_file_size: 50M
+  discord:
+    enabled: true
+    webhook: ''
+  email:
+    enabled: false
+    smtp_server: ''
+    smtp_port: 587
+    username: ''
+    password: ''
+    from: ''
+    to: ''
+security:
+  validate_ssl: true
+  allow_insecure: false
+  encrypt_credentials: false
+  credential_key: ''
+performance:
+  thread_pool_size: 10
+  queue_size: 100
+  cache_enabled: true
+  cache_ttl: 3600
+features:
+  enable_parallel_processing: true
+  enable_result_caching: true
+  enable_progress_tracking: true
+  enable_resume_capability: true
+  enable_auto_update: false
